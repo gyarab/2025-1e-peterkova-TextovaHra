@@ -218,7 +218,6 @@ public class Game {
                                         System.out.println("1) Oslovíš ho");
                                         System.out.println("2) Ignoruješ ho dál");
 
-
                                         choice = 0;
 
                                         while (choice != 1 && choice != 2) {
