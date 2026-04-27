@@ -275,7 +275,6 @@ public class Game {
                                                         Konec.dobryKonec(scanner);
 
 
-
                                                     } else if (choice == 2) {
 
                                                         System.out.println("");

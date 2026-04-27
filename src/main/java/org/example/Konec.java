@@ -11,7 +11,6 @@ public class Konec {
         System.out.println("ŠPATNÝ KONEC");
         System.out.println("");
         System.out.println("Děkuji za dohrání, třeba se ti příště povede lépe");
-
     }
 
     public static void dobryKonec(Scanner scanner) {
