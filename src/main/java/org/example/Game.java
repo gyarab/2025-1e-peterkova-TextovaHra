@@ -176,22 +176,67 @@ public class Game {
                                                     if (choice == 1) {
 
                                                         System.out.println("");
-                                                        System.out.println("Je to notifikace od tvé sestry. Chtěla by dnes u tebe přespat, protože se vrací z dlouhé cesty a bydlí daleko. Odepíšeš jí že může.");
-                                                        System.out.println("Co přesně jí napíšeš?");
+                                                        System.out.println("Je to notifikace od tvé sestry. Chtěla by dnes u tebe přespat, protože se vrací z dlouhé cesty a bydlí daleko. Co přesně jí napíšeš?");
                                                         System.out.println("");
-                                                        System.out.println("1) ");
-                                                        System.out.println("2) ");
+                                                        System.out.println("1) Ahoj ségra, samozřejmě můžeš");
+                                                        System.out.println("2) Dneska se mi to úplně nehodí, promň");
                                                         System.out.println("");
+
+                                                        choice = 0;
+
+                                                        while (choice != 1 && choice != 2) {
+                                                            System.out.print("Vyber možnost: ");
+                                                            if (scanner.hasNextInt()) {
+                                                                choice = scanner.nextInt();
+                                                                if (choice != 1 && choice != 2) {
+                                                                    System.out.println("Neplatná volba! Zkus to znovu.");
+                                                                }
+                                                            } else {
+                                                                System.out.println("Zadej číslo!");
+                                                                scanner.next();
+                                                            }
+                                                            if (choice == 1) {
+
+                                                                System.out.println("");
+                                                                System.out.println("Sestra ti odepíše, a ty se na ní nemůžeš dočkat, už dlouho jste se neiděli! Chvilkama opatrně po očku pozoruješ to podivné");
+                                                                System.out.println("individuum, jestli nedělá něco divného, ale naštěstí si prozatím hledí svého. Tramvaj pomalu zastaví na další zastávce a ty se");
+                                                                System.out.println("rozhodneš vystoupit. Čerstvý vzduch ti trochu pročistí hlavu. Ulice už nepůsobí tak děsivě jako předtím. Lampy svítí jasněji a ty");
+                                                                System.out.println("konečně poznáváš cestu, která vede k tobě domů. Po chvíli chůze dorazíš ke svému domu. A tam už na tebe někdo čeká. 'Konečně!' ozve");
+                                                                System.out.println("se známý hlas. Tvoje sestra k tobě přiběhne a obejme tě. Najednou z tebe všechno napětí spadne. Společně odemknete dveře a vejdete");
+                                                                System.out.println("dovnitř. Teplo domova tě okamžitě uklidní.");
+                                                                Konec.dobryKonec(scanner);
+                                                                //konec - sestra
+
+
+
+
+                                                            } else if (choice == 2) {
+
+                                                                System.out.println("");
+                                                                System.out.println("Odepíšeš jí, že dnes nemáš čas a že by si měla najít jiné místo na přespání. Chvíli se nic neděje. Pak ti přijde krátká odpověď.");
+                                                                System.out.println("'Aha… dobře.' Jakmile zprávu dočteš, něco na tom nesedí. Ten tón. Ta stručnost. Zamračíš se a pomalu zvedneš hlavu od telefonu. Tramvaj je najednou");
+                                                                System.out.println("podezřele tichá. A pak si všimneš, že ten člověk, který seděl před tebou, už tam není. Dveře se otevřou a ty rychle vystoupíš ven. Ulice je prázdná,");
+                                                                System.out.println("až nepřirozeně prázdná. Rozhodneš se jít domů pěšky. Kroky se ti rozléhají v tichu, ale po chvíli si uvědomíš, že to nejsou jen tvoje kroky. Někdo");
+                                                                System.out.println("jde za tebou. Zrychlíš a ten zvuk zrychlí taky. Otočíš se, ale nikdo tam není. Když se otočíš zpátky, stojí přímo před tebou. Ten člověk z tramvaje.");
+                                                                System.out.println("Dívá se na tebe bez jediného slova a pak se pomalu usměje. Tma tě pohltí dřív, než stihneš cokoliv udělat. Domů ses ten den nedostal.");
+                                                                Konec.spatnyKonec(scanner);
+                                                                //odmitnusti sestry
+                                                            }
+                                                        }
+
+
 
 
                                                     } else if (choice == 2) {
 
                                                         System.out.println("");
-                                                        System.out.println("");
-                                                        System.out.println("");
-                                                        System.out.println("1) ");
-                                                        System.out.println("2) ");
-                                                        System.out.println("");
+                                                        System.out.println("Rozhodneš se notifikaci ignorovat a telefon necháš být. Tramvaj dál jede, ale máš divný pocit, že se něco změnilo. Po chvíli tramvaj prudce zastaví, i když venku");
+                                                        System.out.println("není žádná zastávka. Dveře se samy otevřou.Nechápavě se rozhlédneš, vystoupíš. Jakmile se ocitneš venku, tramvaj za tebou okamžitě odjede, i když");
+                                                        System.out.println("jsi ji neviděl rozjíždět. Otočíš se zpátky, ale místo ulice vidíš jen tmu a prázdný prostor bez konce. Telefon v kapse ti zavibruje. Tentokrát se na něj podíváš.");
+                                                        System.out.println("Na displeji svítí jedna jediná zpráva. 'Proč jsi mě ignoroval?' Pomalu zvedneš hlavu a uvědomíš si, že nejsi venku ve městě, ale zpátky v tramvaji. Sedíš přesně tam, kde");
+                                                        System.out.println("jsi byl předtím. A naproti tobě sedí ten člověk, který se na tebe dívá, jako by čekal, až to pochopíš. Tramvaj se znovu rozjíždí.");
+                                                        Konec.spatnyKonec(scanner);
+                                                        //konec - ignor
 
                                                     }
                                                 }
@@ -271,32 +316,25 @@ public class Game {
                                                     if (choice == 1) {
 
                                                         System.out.println("");
-                                                        System.out.println("Jdeš noční ulicí a jseš nesmírně rád, že se blížíš ke svému bydlišti. Už jsi jen pár metrů od domova. Dojdeš, odemkneš dveře a vejdeš k sobě domů.");
+                                                        System.out.println("Ulice postupně přestávají být tak prázdné. Lampy už nesvítí jen sporadicky a ty konečně poznáváš cestu, kterou chodíš každý den. Když dorazíš ke ");
+                                                        System.out.println("svému domu, úleva tě téměř přemůže. Odemkneš dveře a vstoupíš dovnitř. Zavřeš za sebou, opřeš se o ně a vydechneš. Konečně doma. Dnešní noc byla zvláštní… ale ");
+                                                        System.out.println("je za tebou.");
                                                         Konec.dobryKonec(scanner);
+                                                        //konec - rovnou domů
 
 
                                                     } else if (choice == 2) {
 
                                                         System.out.println("");
-                                                        System.out.println("");
-                                                        System.out.println("");
-                                                        System.out.println("1) ");
-                                                        System.out.println("2) ");
-                                                        System.out.println("");
+                                                        System.out.println("Cesta je dlouhá, ale postupně začínáš poznávat okolí. Stromy mizí, ulice se rozšiřují a ty konečně vidíš svůj dům. Rychle odemkneš a vlezeš dovnitř.");
+                                                        System.out.println("Jakmile za sebou zavřeš dveře, pocítíš obrovskou úlevu. Ale když se otočíš ke zrcadlu v předsíni… na zlomek vteřiny máš pocit, že za tebou někdo stál.");
+                                                        System.out.println("Zamrkáš. Nic tam není. Jen tvoje vlastní unavená tvář. Jsi doma. Ale nejsi si jistý, jestli jsi přišel sám.");
+
+                                                        Konec.dobryKonec(scanner);
+                                                        //konec - prochazka
 
                                                     }
                                                 }
-
-
-
-
-
-
-
-
-
-
-
                                             }
                                         }
                                     }
