@@ -204,7 +204,7 @@ public class Game {
                                                 System.out.println("že před tebou sedí plyšová panenka. Jak se tam dostala? A kam zmizel ten neznámý?! Nedůvěřivě jí pozoruješ až se rozhodněš, že si jí prohlídneš.");
                                                 System.out.println("V ruce držela papírek s nápisem. 'Jsi na řadě' vystřelíš pohledem nahoru od panenky. Tramvaj, ve které si jel se právě vybourala a museli tě převést");
                                                 System.out.println("do nemocnice. Ten den ses tedy domů nedostal.");
-
+                                                //konec panenka
                                                 Konec.spatnyKonec(scanner);
 
                                             }
@@ -239,7 +239,7 @@ public class Game {
                                                 System.out.println("'Zvláštní, ne? Nemáš pocit, že už jsi něco takového zažil?' řekne. Ty nechápavě nakrčíš obočí. ");
                                                 System.out.println("'Cože?'");
                                                 System.out.println("'Ty si to nepamatuješ? Tohle už jsme zažili. Znovu a znovu...");
-                                                System.out.println("Psk jakoby sis začal uvědomovat, že je ti to opravdu povědomé. Ta samota v tramvaji. Tento zvlíštní člověk před tebou. Tento rozhovor...");
+                                                System.out.println("Pak jakoby sis začal uvědomovat, že je ti to opravdu povědomé. Ta samota v tramvaji. Tento zvláštní člověk před tebou. Tento rozhovor...");
                                                 System.out.println("'Smyčka se začne opět rozjíždět... Tak... a opět znovu...' najednou se ti zatemní před očima. Probereš se a sedíš na zastávce tramvaje. Z této smyčkyy není útěku.");
                                                 System.out.println("");
                                                 //konec - smyčka
@@ -249,11 +249,55 @@ public class Game {
                                             } else if (choice == 2) {
 
                                                 System.out.println("");
+                                                System.out.println("Jedeš tramvají dál a dál. Cesta od té chvíle působila velice klidně. Ani netušíš jak, ale dostal jsi se k zastávce blízko tvého domu. Vystoupíš, a...");
                                                 System.out.println("");
+                                                System.out.println("1) Půjdeš rovnou domů");
+                                                System.out.println("2) Trochu se ještě projdeš");
                                                 System.out.println("");
-                                                System.out.println("1) ");
-                                                System.out.println("2) ");
-                                                System.out.println("");
+
+                                                choice = 0;
+
+                                                while (choice != 1 && choice != 2) {
+                                                    System.out.print("Vyber možnost: ");
+                                                    if (scanner.hasNextInt()) {
+                                                        choice = scanner.nextInt();
+                                                        if (choice != 1 && choice != 2) {
+                                                            System.out.println("Neplatná volba! Zkus to znovu.");
+                                                        }
+                                                    } else {
+                                                        System.out.println("Zadej číslo!");
+                                                        scanner.next();
+                                                    }
+                                                    if (choice == 1) {
+
+                                                        System.out.println("");
+                                                        System.out.println("Jdeš noční ulicí a jseš nesmírně rád, že se blížíš ke svému bydlišti. Už jsi jen pár metrů od domova. Dojdeš, odemkneš dveře a vejdeš k sobě domů.");
+                                                        Konec.dobryKonec(scanner);
+
+
+
+                                                    } else if (choice == 2) {
+
+                                                        System.out.println("");
+                                                        System.out.println("");
+                                                        System.out.println("");
+                                                        System.out.println("1) ");
+                                                        System.out.println("2) ");
+                                                        System.out.println("");
+
+                                                    }
+                                                }
+
+
+
+
+
+
+
+
+
+
+
                                             }
                                         }
                                     }
@@ -401,7 +445,7 @@ public class Game {
 
                                         System.out.println("");
                                         System.out.println("Neznámý na tebe jen krátce pohlédne a pak otočí zrak pryč. Chvíli váháš, ale rozhodneš se ho ignorovat a pokračovat jiným směrem. Najdeš z parku cestu ven a ");
-                                        System.out.println("vydáš se raději kolem jiných ulic. Cestou narazíš na malou večerku, kde si na chvíli sedneš a uklidníš se. Čas rychle uteče a venku už je pozdě půlnoc.");
+                                        System.out.println("vydáš se raději skrz jiné ulice, než kterými jsi sem došel. Cestou narazíš na malou večerku, kde si na chvíli sedneš a uklidníš se. Čas rychle uteče a venku už je půlnoc.");
                                         System.out.println("Dnešní cesta se tím pádem nevydařila, neboť jsi se nedostal domů.");
                                         //konec - vecerka
                                         Konec.spatnyKonec(scanner);
@@ -411,7 +455,7 @@ public class Game {
                             } else if (choice == 2) {
 
                                 System.out.println("");
-                                System.out.println("Udělal jsi moc prudký pohyb a otočil ses zpět k zastávce. Vidíš že akorát přijíždí nějaká tramvaj. Snažíš se jí doběhnout, Jak ti jen síly stačí. Bohužel, jsi jí nestihl.");
+                                System.out.println("Udělal jsi prudký pohyb a otočil ses zpět k zastávce. Vidíš že akorát přijíždí nějaká tramvaj. Snažíš se jí doběhnout, Jak ti jen síly stačí. Bohužel, jsi jí nestihl.");
                                 System.out.println("Další dneska už nepojede, tím pádem nemáš způsob, jakým se dostat domů.");
 
                                 //konec - zavřená tramvaj
